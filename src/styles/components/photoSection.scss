@@ -1,0 +1,37 @@
+.photo-section{
+    background: url('../assets/header1.jpg');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+}
+
+@media (min-width: 1px) and (max-width: 480px){
+    .photo-section{
+        height: 30vh;
+        background-position-y: center;
+        background-attachment: unset;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .photo-section{
+        height: 30vh;
+        background-position-y: center;
+        background-attachment: unset;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .photo-section{
+        height: 50vh;
+        background-position-y: center;
+        background-attachment: unset;
+        background-size: cover;
+    }
+}

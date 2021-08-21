@@ -95,6 +95,19 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html'
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/rodo.html',
+      filename: './rodo.html'
+    })
+    ,
+    new HtmlWebPackPlugin({
+      template: './src/cennik.html',
+      filename: './cennik.html'
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/galeria.html',
+      filename: './galeria.html'
     })
   ]
 }

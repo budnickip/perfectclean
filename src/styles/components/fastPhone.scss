@@ -1,0 +1,58 @@
+.fast-phone{
+    position: fixed;
+    bottom: 18px;
+    left: 18px;
+    width: 50px;
+    height: 50px;
+    background: #00A483;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(270deg, #3BB974, #00A483);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(270deg, #3BB974, #00A483); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.5);
+    animation: shadow-animation;
+    animation-iteration-count:infinite;
+    animation-duration: 10s;
+    &__link{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__icon{
+        font-size: 1.5em;
+        color: white;
+        animation: phone-move;
+        animation-iteration-count:infinite;
+        animation-duration: 10s;
+    }
+}
+
+@keyframes shadow-animation{
+    20%{-webkit-box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.5);
+        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.5);}
+    30%{    -webkit-box-shadow: 1px 1px 5px 16px rgba(59,185,116,0.8);
+        -moz-box-shadow: 1px 1px 5px 16px rgba(59,185,116,0.8);
+        box-shadow: 1px 1px 5px 16px rgba(59,185,116,0.8);}
+    40%{-webkit-box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.5);
+        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.5);}
+}
+
+@keyframes phone-move{
+    25%{
+        transform: rotate(0);
+    }
+    30%{
+        transform: rotate(30deg);
+    }
+    35%{
+        transform: rotate(0);
+    }
+}

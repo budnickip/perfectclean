@@ -1,0 +1,21 @@
+.home{
+    margin-bottom: 2em;
+}
+
+.information{
+    margin-top: 4em;
+    &__header{
+        text-transform: uppercase;
+        color: var(--darkBlue, black);
+    }
+}
+
+.header-line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--line, grey);
+}
+
+.information-left, .information-right{
+    margin-top: 2em;
+}

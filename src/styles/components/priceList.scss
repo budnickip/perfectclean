@@ -1,0 +1,80 @@
+.price-list{
+    margin-top: 10em;
+
+    &__header{
+        color: var(--darkBlue, black);
+    }
+}
+
+.price-info{
+    background: #ffffff;
+    //width: 80vw;
+    padding: 20px;
+    //-webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    // -moz-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    // box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.price-description{
+    padding: 20px 0px 20px 20px;
+    width: 300px;
+    flex-grow: 1;
+
+    &__paragraph{
+        text-align: right;
+    }
+}
+
+.price-photo{
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    border-radius: 50%;
+    padding-bottom: 20px;
+    background-image: url('../assets/dolar.png');
+}
+
+
+.price-item{
+    @extend .row;
+    color: var(--darkBlue, black);
+    &:nth-child(even){
+        background-color: var(--lightestBlue, grey);
+    }
+
+    &__heading{
+        font-weight: 600;
+        padding-top: 1rem;
+    }
+
+    &__paragraph{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.packages{
+    &__paragraph{
+        margin: 1em 0;
+        color: var(--darkBlue, black);
+    }
+    &__highlight{
+        font-weight: 600;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .price{
+        padding-left: 5%;
+    }
+    .price-description{
+        padding: 20px 0px;
+    }
+}

@@ -1,0 +1,73 @@
+.gallery{
+    margin-top: 10em;
+}
+
+.gallery-pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 1em;
+
+    &__text{
+        font-size: 1.5em;
+        font-weight: 600;
+        font-family: 'Ubuntu', sans-serif;
+        color: var(--darkBlue, black);
+        text-transform: uppercase;
+    }
+}
+
+.gallery-image{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.after1{
+    background-image: url("../assets/gallery/1after.jpg");
+}
+.before1{
+    background-image: url("../assets/gallery/1before.jpg");
+}
+
+.after2{
+    background-image: url("../assets/gallery/2after.jpg");
+}
+.before2{
+    background-image: url("../assets/gallery/2before.jpg");
+}
+.after3{
+    background-image: url("../assets/gallery/3after.jpg");
+}
+.before3{
+    background-image: url("../assets/gallery/3before.jpg");
+}
+
+.after4{
+    background-image: url("../assets/gallery/4after.jpg");
+}
+.before4{
+    background-image: url("../assets/gallery/4before.jpg");
+}
+
+.after5{
+    background-image: url("../assets/gallery/5after.jpg");
+}
+.before5{
+    background-image: url("../assets/gallery/5before.jpg");
+}
+
+.after6{
+    background-image: url("../assets/gallery/6after.jpg");
+}
+.before6{
+    background-image: url("../assets/gallery/6before.jpg");
+}
+
+@media (min-width: 1px) and (max-width: 900px) {
+    .gallery{
+        padding: 0;
+        margin: 0;
+    }
+}

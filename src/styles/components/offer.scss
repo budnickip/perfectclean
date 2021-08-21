@@ -1,0 +1,40 @@
+.offer{
+    &__header{
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-left: 0.5em;
+    }
+    &__icon{
+        font-size: 1.2rem;
+        color: var(--darkBlue, black);
+        margin-right: 0.3em;
+    }
+    &__image{
+        max-width: 35px;
+        max-height: 35px;
+    }
+}
+
+.offer-col{
+    &__paragraph{
+        display: flex;
+        margin: 0.3em 0;
+        align-items: center;
+        opacity: 0;
+        transition: .8s;
+        transform: translateX(-50px);
+    }
+}
+
+.active-paragraph{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.offer-header-wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-left: 2em;
+}

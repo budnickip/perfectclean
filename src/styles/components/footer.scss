@@ -1,0 +1,44 @@
+.footer{
+    padding: 2em;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(270deg, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(270deg, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: var(--light, white);
+    display: flex;
+    flex-wrap: wrap;
+
+    &__link{
+        color: white;
+        transition: .5s;
+        &::after{
+            display: block;
+            content: '';
+            border-bottom: 2px solid var(--lightBlue, green);
+            transform: scaleX(0);
+            transition: transform 400ms ease-in-out;
+
+            transform-origin: 100% 50%;
+        }
+        &:hover{
+            color: var(--lightBlue, green);
+            text-decoration: none;
+    
+            &::after{
+                transform: scaleX(1);
+                transform-origin: 0% 50%;
+            }
+        }
+    }
+}
+
+.footer-copyright, .footer-policy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em; 
+}
+.footer-author{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
